@@ -8,7 +8,7 @@ import com.com.sky.downloader.greendao.DaoSession;
 
 
 public class MyApp extends Application {
-    private static final String DATA_BASE_NAME = "zdh-db";//数据库名
+    private static final String DATA_BASE_NAME = "zdh.db";//数据库名
     private static DaoSession daoSession;//DaoMaster的管理者
 
     @Override
@@ -19,7 +19,7 @@ public class MyApp extends Application {
     }
 
     private void initGreenDao() {
-        //创建数据库 zdh-db
+        //创建数据库 zdh.db
         DaoMaster.DevOpenHelper openHelper = new DaoMaster.DevOpenHelper(this, DATA_BASE_NAME,null);
         //获取可写数据库
         SQLiteDatabase writableDatabase = openHelper.getWritableDatabase();
